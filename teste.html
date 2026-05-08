@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Bootstrap Cinza</title> <!-- Bootstrap CSS -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        /* Estilo extra apenas para visualizar as colunas */
+        .debug-col {
+            background-color: #e9ecef;
+            border: 1px solid #dee2e6;
+        }
+    </style>
+</head>
+
+<body class="bg-light text-secondary">
+    <!-- Container centralizado -->
+    <div class="container py-5"> <!-- Cabeçalho: fs-1 (grande) e fw-bold (negrito) -->
+        <header class="text-center mb-5">
+            <h1 class="fs-1 fw-bold text-dark">Meu Layout Minimalista</h1>
+            <p class="fs-5">Explorando grades e espaçamentos em tons de cinza.</p>
+        </header>
+        <hr class="my-5"> <!-- Linha com Grade Responsiva -->
+        <div class="row g-4"> <!-- Coluna 1: Ocupa 12 no mobile e 4 no desktop (1/3 da tela) -->
+            <div class="col-12 col-md-4">
+                <div class="p-4 debug-col rounded shadow-sm">
+                    <h2 class="fs-4 fw-bold text-dark">Seção 01</h2>
+                    <p class="fs-6">Aqui usamos <code>col-md-4</code>. No computador, cabem três destas.</p>
+                </div>
+            </div> <!-- Coluna 2: Ocupa 12 no mobile e 4 no desktop -->
+            <div class="col-12 col-md-4">
+                <div class="p-4 debug-col rounded shadow-sm">
+                    <h2 class="fs-4 fw-bold text-dark">Seção 02</h2>
+                    <p class="fs-6">O padding vertical é controlado por <code>py-4</code> nesta caixa.</p>
+                </div>
+            </div> <!-- Coluna 3: Ocupa 12 no mobile e 4 no desktop -->
+            <div class="col-12 col-md-4">
+                <div class="p-4 debug-col rounded shadow-sm">
+                    <h2 class="fs-4 fw-bold text-dark">Seção 03</h2>
+                    <p class="fs-6">A cor do texto é definida por <code>text-secondary</code>.</p>
+                </div>
+            </div>
+        </div> <!-- Rodapé com py-5 (48px de padding vertical) -->
+        <footer class="py-5 mt-5 border-top text-center">
+            <p class="fw-light italic">© 2026 - Estrutura 12 Colunas Bootstrap</p>
+        </footer>
+    </div>
+</body>
+
+</html>
