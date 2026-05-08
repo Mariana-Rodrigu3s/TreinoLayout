@@ -1,0 +1,69 @@
+const carregarComponente = async (caminho, container) =>{
+//     try{
+//         const resposta = await fetch(caminho);
+
+
+//         if (!resposta.ok){
+//             throw new Error('Erro ao carregar componente')
+//         }
+
+//         const html = await resposta.text();
+
+//         container.innerHTML = html
+
+
+//     }catch(erro){
+//         console.warn(erro)
+
+//     }
+
+// };
+
+// const url = 'c-test.html'
+// const container = document.querySelector('body')
+
+// carregarComponente(url, container)
+
+
+// let anna = (numero) => console.log(numero * 5);
+
+// var num = 'senai'
+
+// // let num = 6
+
+// let result = "Not Active.";
+// let isActive = false;
+
+
+// if (isActive = true) {
+//   let result = "Active!";
+// }else{
+//     result = "Not Active."
+// }
+
+// console.log(result, isActive)
+
+
+// try{
+//     // num.toPrecision(500)
+
+//     // console.log(num.toUpperCase())
+
+//     // let x = Math.round(4.6)
+    
+//     // let maiuscula = num.toUpperCase();
+//     // console.log(maiuscula)
+
+// }catch(erro){
+//     let text = `
+//     <strong>Nome do erro:</strong> ${erro.name}<br />
+//     <strong>Mensagem:</strong> ${erro.message}<br />
+//     <strong>Nome do erro:</strong><span>${erro.stack}</span>
+//     `
+
+
+//     document.body.innerHTML = text
+// }
+
+
+

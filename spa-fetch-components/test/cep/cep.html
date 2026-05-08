@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+    <script src="./cep.js" defer>
+        const button_then = document.getElementById('then')
+const button_async = document.getElementById('async')
+
+
+
+button_then.addEventListener('click', () =>{
+    const input = document.getElementById('input01').value;
+
+    fetch(`https://viacep.com.br/ws/${input01}/json/`)
+
+.then((response) => {
+
+    if(!response.ok){
+        throw new Error('Erro na Requisição.')
+    }
+    return response.json()
+})
+.then((dados) => {
+
+    if(dados.erro){
+        throw new Error('CEP inválido ou não encontrado.')
+    }
+    console.log(dados)
+})
+.catch((erro) => {
+    console.warn(erro.message)
+});
+})
+
+
+
+
+
+
+
+
+
+
+button_async.addEventListener('click', () =>{
+
+    const url = 'https://viacep.com.br/ws/01001000/json/';
+const consulta = fetch(url);
+
+async function buscarCep(){
+    let resposta = await consulta;
+    console.log(resposta)
+    let dataObj = await resposta.json();
+    console.log(dataObj);
+};
+
+buscarCep();
+})
+
+
+    </script>
+</head>
+<body>
+    <h1>Consulta de CEP</h1>
+    <div>
+        <input id="input01" type="number" placeholder="Digite o CEP">
+
+        <button id="then">Buscar com .then()</button>
+        <button id="async">Buscar com async/await</button>
+    </div>
+</body>
+</html>
