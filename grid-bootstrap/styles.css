@@ -1,4 +1,10 @@
-.carousel-item{
-    height: 90vh;
-    margin-bottom: 30px;
+#teste{
+    transition-duration: 600ms;
+    transition-timing-function: ease;
+}
+
+#teste:is(:hover, :focus){
+    transform: (1.3);
+
+    
 }
